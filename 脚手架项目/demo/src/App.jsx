@@ -1,6 +1,7 @@
 import React from "react"
 import HelloWorld from "./components/HelloWorld";
 import ToStudy from "./components/ToStudy";
+import UseRef from "./components/UseRef"
 
 class App extends React.Component {
     constructor() {
@@ -28,6 +29,7 @@ class App extends React.Component {
                     <div>inToStudy2</div>
                 </ToStudy>
                 <input value={inputValue} onChange={(e) =>{this.inputChange(e)}}/>
+                <UseRef/>
             </div>
         )
     }
