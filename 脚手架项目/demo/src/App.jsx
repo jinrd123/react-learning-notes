@@ -2,6 +2,7 @@ import React from "react"
 import HelloWorld from "./components/HelloWorld";
 import ToStudy from "./components/ToStudy";
 import UseRef from "./components/UseRef"
+import Profile from "./components/profile/Profile";
 
 class App extends React.Component {
     constructor() {
@@ -23,13 +24,7 @@ class App extends React.Component {
         return (
             <div>
                 <h2>{message}</h2>
-                <HelloWorld/>
-                <ToStudy propname="hhh">
-                    <div>inToStudy</div>
-                    <div>inToStudy2</div>
-                </ToStudy>
-                <input value={inputValue} onChange={(e) =>{this.inputChange(e)}}/>
-                <UseRef/>
+                <Profile/>
             </div>
         )
     }
