@@ -4,6 +4,11 @@ import ToStudy from "./components/ToStudy";
 import UseRef from "./components/UseRef"
 import Profile from "./components/profile/Profile";
 
+import { FloatingButton, Item } from "./FloatingButton";
+// import downloadIcon from "./assets/DOWNLOAD.svg";
+// import forwardIcon from "./assets/FORWARD.svg";
+
+
 class App extends React.Component {
     constructor() {
         super();
@@ -23,8 +28,20 @@ class App extends React.Component {
         const { message, inputValue } = this.state;
         return (
             <div>
-                <h2>{message}</h2>
-                <Profile/>
+                <FloatingButton>
+                    <Item
+                        imgSrc={downloadIcon}
+                        onClick={() => {
+                            console.log("callback function here");
+                        }}
+                    />
+                    <Item
+                        imgSrc={forwardIcon}
+                        onClick={() => {
+                            console.log("callback function here");
+                        }}
+                    />
+                </FloatingButton>;
             </div>
         )
     }
