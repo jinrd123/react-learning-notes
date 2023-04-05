@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <ClassComponent test={123} />
-      <div>{<div>123123213</div>}</div>
+      <div>{[<div key={123}>123123213</div>,]}</div>
       Home页面
       <Outlet />
     </div>
